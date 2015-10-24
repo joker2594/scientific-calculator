@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/version1.css" />
+    <link rel="stylesheet" href="css/bootstrap-switch.css" />
+
+
+    <title></title>
+</head>
+<body>
+<div class="container">
+
+    <!-- TEXTBOX -->
+    <div class="row textbox">
+        <div class="display-result col-lg-4 col-lg-offset-3"><h2></h2></div>
+        <div class="tb col-lg-7">
+            <input class="form-control" id="calc-textbox" type="text"/>
+        </div>
+    </div>
+
+    <div class="row calculator">
+
+        <!-- SCIENTIFIC -->
+        <div class="scientific col-lg-3">
+            <div class="rad-switch col-lg-8">
+                <input type="checkbox" name="rad-checkbox" data-on-color="default" data-label-text=":::::"
+                       data-on-text="Rad" data-off-text="Deg" data-handle-width="66" checked />
+            </div>
+
+            <div class="digit digit-above col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="%"><b>%</b></button>
+            </div>
+
+            <div class="op col-lg-4">
+                <button class="second btn btn-default btn-block" value="">2nd</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="sin(">sin</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="ln(">ln</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="e">e</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="cos(">cos</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="log-btn btn btn-default btn-block" value="log(">log</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="pi">pi</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="tan(">tan</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="sqrt(">sqrt</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="ans btn btn-default btn-block" value="Ans">Ans</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="!">x!</button>
+            </div>
+            <div class="op col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="^">x<sup>y</sup></button>
+            </div>
+
+
+
+        </div>
+
+        <!-- DIGITS -->
+        <div class="digits col-lg-3">
+            <div class="digit digit-above col-lg-4">
+                <button class="ob-btn btn btn-default btn-block" value="("><b>(</b></button>
+            </div>
+            <div class="digit digit-above col-lg-4">
+                <button class="cb-btn btn btn-default btn-block" value=")"><b>)</b></button>
+            </div>
+            <div class="digit digit-above col-lg-4">
+                <button class="undo btn btn-default btn-block" value="undo"><b><-</b></button>
+            </div>
+
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="7">7</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="8">8</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="9">9</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="4">4</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="5">5</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="6">6</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="1">1</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="2">2</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="3">3</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value="0">0</button>
+            </div>
+            <div class="digit col-lg-4">
+                <button class="normal-btn btn btn-default btn-block" value=".">.</button>
+            </div>
+            <div class="digit-equal col-lg-4">
+                <button class="evaluate btn btn-primary btn-block" value="=">=</button>
+            </div>
+        </div>
+
+        <!-- OPERATORS -->
+        <div class="operators col-lg-1">
+            <div class="op op-clear col-lg-12">
+                <button class="clear btn btn-default btn-block" value="c"><b>C</b></button>
+            </div>
+            <div class="op col-lg-12">
+                <button class="normal-btn btn btn-default btn-block" value="/">/</button>
+            </div>
+            <div class="op col-lg-12">
+                <button class="normal-btn btn btn-default btn-block" value="*">x</button>
+            </div>
+            <div class="op col-lg-12">
+                <button class="normal-btn btn btn-default btn-block" value="-">-</button>
+            </div>
+            <div class="op col-lg-12">
+                <button class="normal-btn btn btn-default btn-block" value="+">+</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/1.5.2/math.min.js"></script>
+<script src="js/bootstrap-switch.js"></script>
+<script src="js/calculator.js"></script>
+</body>
+</html>
