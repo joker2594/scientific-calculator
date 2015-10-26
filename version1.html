@@ -12,12 +12,12 @@
     <title></title>
 </head>
 <body>
-<div class="container">
+<div class="scientific-calculator container">
 
     <!-- TEXTBOX -->
     <div class="row textbox">
-        <div class="display-result col-lg-4 col-lg-offset-3"><h2></h2></div>
-        <div class="tb col-lg-7">
+        <div class="display-result col-lg-4 col-lg-offset-8"><h3></h3></div>
+        <div class="tb col-lg-7 col-lg-offset-5">
             <input class="form-control" id="calc-textbox" type="text"/>
         </div>
     </div>
@@ -25,7 +25,7 @@
     <div class="row calculator">
 
         <!-- SCIENTIFIC -->
-        <div class="scientific col-lg-3">
+        <div class="scientific col-lg-3 col-lg-offset-5">
             <div class="rad-switch col-lg-8">
                 <input type="checkbox" name="rad-checkbox" data-on-color="default" data-label-text=":::::"
                        data-on-text="Rad" data-off-text="Deg" data-handle-width="66" checked />
@@ -39,25 +39,25 @@
                 <button class="second btn btn-default btn-block" value="">2nd</button>
             </div>
             <div class="op col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value="sin(">sin</button>
+                <button class="func-btn btn btn-default btn-block" value="sin(">sin</button>
             </div>
             <div class="op col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value="ln(">ln</button>
+                <button class="func-btn btn btn-default btn-block" value="ln(">ln</button>
             </div>
             <div class="op col-lg-4">
                 <button class="normal-btn btn btn-default btn-block" value="e">e</button>
             </div>
             <div class="op col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value="cos(">cos</button>
+                <button class="func-btn btn btn-default btn-block" value="cos(">cos</button>
             </div>
             <div class="op col-lg-4">
-                <button class="log-btn btn btn-default btn-block" value="log(">log</button>
+                <button class="func-btn btn btn-default btn-block" value="log(">log</button>
             </div>
             <div class="op col-lg-4">
                 <button class="normal-btn btn btn-default btn-block" value="pi">pi</button>
             </div>
             <div class="op col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value="tan(">tan</button>
+                <button class="func-btn btn btn-default btn-block" value="tan(">tan</button>
             </div>
             <div class="op col-lg-4">
                 <button class="normal-btn btn btn-default btn-block" value="sqrt(">sqrt</button>
@@ -69,7 +69,7 @@
                 <button class="normal-btn btn btn-default btn-block" value="!">x!</button>
             </div>
             <div class="op col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value="^">x<sup>y</sup></button>
+                <button class="normal-btn btn btn-default btn-block" value="^(">x<sup>y</sup></button>
             </div>
 
 
@@ -119,7 +119,7 @@
                 <button class="normal-btn btn btn-default btn-block" value="0">0</button>
             </div>
             <div class="digit col-lg-4">
-                <button class="normal-btn btn btn-default btn-block" value=".">.</button>
+                <button class="point btn btn-default btn-block" value=".">.</button>
             </div>
             <div class="digit-equal col-lg-4">
                 <button class="evaluate btn btn-primary btn-block" value="=">=</button>
@@ -151,12 +151,22 @@
     </div>
 
 </div>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<h2 class="display-coords">Coords: </h2>
+<button id="log-array" class="btn btn-primary">Show array</button>
+<div class="display-coords-array">All coords: </div>
+<button id="show-plot" class="btn btn-primary">Plot</button>
 
-<!-- Latest compiled and minified JavaScript -->
+
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/1.5.2/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 <script src="js/bootstrap-switch.js"></script>
 <script src="js/calculator.js"></script>
+<script src="js/analyse.js"></script>
+
 </body>
 </html>

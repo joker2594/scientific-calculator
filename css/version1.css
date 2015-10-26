@@ -1,3 +1,7 @@
+
+.scientific-calculator {
+    margin-left: 200px;
+}
 .textbox {
     margin-top: 100px;
     margin-bottom: 5px;
@@ -80,6 +84,15 @@
 
 .display-result {
     text-align: right;
+}
+
+.display-plot {
+    height: 280px;
+    width: 665px;
+    background-image: url("../calc.jpg");
+    background-repeat: no-repeat;
+
+    margin-left: 210px;
 }
 
 
