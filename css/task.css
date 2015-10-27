@@ -1,0 +1,29 @@
+.task {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    width: 450px;
+    background-color: #E5E4E2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.task h3 {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.task p {
+    text-align: center;
+}
+
+.task button {
+    position: relative;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+}
