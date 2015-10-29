@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    var basic_operators = ["+", "*", "/", "-"];
     var operators = ["+", "-", "*", "/", "("];
     var special_operators = ["+", "*", "/"];
     // var mathFunctions = ['sin(', 'cos(', 'tan(', 'log(', 'sqrt(', '^('];
@@ -9,6 +10,9 @@ $(document).ready(function () {
     var degSwitch = $("[name='rad-checkbox']");
     var radians = true;
     var lastResult = null;
+    var removeLastResult = false;
+
+    textBox.val("");
 
     function allowSpecialOperators(expr) {
         return !((expr.length == 0) || ($.inArray(expr[expr.length - 1], operators) > -1));
@@ -48,11 +52,22 @@ $(document).ready(function () {
 
     degSwitch.bootstrapSwitch();
 
+    $('button').click(function () {
+        var value = $(this).val();
+        if (removeLastResult) {
+            if (($.inArray(value, basic_operators) == -1)) {
+                expression = "";
+                textBox.val("");
+
+            }
+            removeLastResult = false;
+
+        }
+    });
+
     $('.normal-btn').click(function () {
         var value = $(this).val();
 
-        //if (value.indexOf("(") > -1) openBrackets++;
-        //else if (value.indexOf(")") > -1) closeBrackets++;
         if (value == "-" && !allowMinus(expression)) value = "";
         if (($.inArray(value, special_operators) > -1) && !allowSpecialOperators(expression)) value = "";
 
@@ -124,6 +139,7 @@ $(document).ready(function () {
             $('.display-result h4').text(expression + ' = ' + lastResult);
             expression = lastResult;
             textBox.val(expression);
+            removeLastResult = true;
         } else alert('brackets error');
 
     });
