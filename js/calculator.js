@@ -121,7 +121,7 @@ $(document).ready(function () {
             parser.eval('tandeg(x) = tan(x deg)');
 
             lastResult = parser.eval(expression);
-            $('.display-result h3').text(expression + ' = ' + lastResult);
+            $('.display-result h4').text(expression + ' = ' + lastResult);
             expression = lastResult;
             textBox.val(expression);
         } else alert('brackets error');

@@ -1,18 +1,30 @@
+body {
+    background-color: #e9eaed;
+}
 
 .scientific-calculator {
     margin-left: 200px;
 }
 .textbox {
     margin-top: 100px;
-    margin-bottom: 5px;
 }
 
 #calc-textbox {
     text-align: right;
+    height: 45px;
+    font-size: 20px;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 
 .tb {
     padding: 0 10px;
+    background-color: white;
+    padding-bottom: 5px;
+    border-left: 1px solid #dfe0e4;
+    border-right: 1px solid #dfe0e4;
+
 }
 
 .digit,
@@ -62,6 +74,9 @@
 
 .digits {
     padding: 0 5px;
+    background-color: white;
+    border-bottom: 1px solid #dfe0e4;
+
 }
 
 .operators,
@@ -71,10 +86,18 @@
 
 .scientific {
     padding-left: 5px;
+    background-color: white;
+    border-left: 1px solid #dfe0e4;
+    border-bottom: 1px solid #dfe0e4;
+
 }
 
 .operators {
     padding-right: 5px;
+    background-color: white;
+    border-right: 1px solid #dfe0e4;
+    border-bottom: 1px solid #dfe0e4;
+
 }
 
 .rad-switch {
@@ -84,6 +107,21 @@
 
 .display-result {
     text-align: right;
+    height: 40px;
+    background-color: white;
+    border-left: 1px solid #dfe0e4;
+    border-right: 1px solid #dfe0e4;
+    border-top: 1px solid #dfe0e4;
+
+
+}
+
+.display-result,
+.tb,
+.scientific,
+.digits,
+.operators {
+
 }
 
 .display-plot {

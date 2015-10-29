@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/version2.css" />
+    <link rel="stylesheet" href="css/bootstrap-switch.css" />
+    <link rel="stylesheet" href="css/task.css" />
+
+
+    <title></title>
+</head>
+<body>
+<!-- A task consists of computing a given expression using the calculator. -->
+<div class="task jumbotron">
+    <h3><b>Time to perform some tasks :)</b></h3>
+    <p id="compute">You will have to perform a total of 8 tasks.</p>
+    <p id="task-text">$$$$
+    </p>
+    <button class="btn btn-primary" value="0">Start</button>
+</div>
+<div class="scientific-calculator container">
+
+    <!-- TEXTBOX -->
+    <div class="calculator-wrapper">
+        <div class="row textbox">
+            <div class="display-result col-lg-7 col-lg-offset-5"><h4></h4></div>
+            <div class="tb col-lg-7 col-lg-offset-5">
+                <input class="form-control" id="calc-textbox" type="text"/>
+            </div>
+        </div>
+
+        <div class="row calculator">
+
+            <!-- SCIENTIFIC -->
+            <div class="scientific col-lg-3 col-lg-offset-5">
+                <div class="rad-switch col-lg-8">
+                    <input type="checkbox" name="rad-checkbox" data-on-color="default" data-label-text=":::::"
+                           data-on-text="Rad" data-off-text="Deg" data-handle-width="43" checked />
+                </div>
+
+                <div class="digit digit-above col-lg-4">
+                    <button class="normal-btn btn btn-block" value="%"><b>%</b></button>
+                </div>
+
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn btn-block" value="e">EXP</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="func-btn btn  btn-block" value="sin(">sin</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="func-btn btn  btn-block" value="ln(">ln</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn  btn-block" value="e"><i>e</i></button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="func-btn btn  btn-block" value="cos(">cos</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="func-btn btn  btn-block" value="log(">log</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn  btn-block" value="pi">&pi;</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="func-btn btn  btn-block" value="tan(">tan</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn  btn-block" value="sqrt(">sqrt</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="ans btn btn-block" value="Ans">Ans</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn btn-block" value="!">x!</button>
+                </div>
+                <div class="op col-lg-4">
+                    <button class="normal-btn btn  btn-block" value="^(">x<sup>y</sup></button>
+                </div>
+
+
+
+            </div>
+
+            <!-- DIGITS -->
+            <div class="digits col-lg-3">
+                <div class="digit digit-above col-lg-4">
+                    <button class="ob-btn btn btn-block" value="(">(</button>
+                </div>
+                <div class="digit digit-above col-lg-4">
+                    <button class="cb-btn btn btn-block" value=")">)</button>
+                </div>
+                <div class="digit digit-above col-lg-4">
+                    <button class="undo btn btn-block" value="undo"><b><span class="glyphicon glyphicon-arrow-left"></span></b></button>
+                </div>
+
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="7">7</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="8">8</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="9">9</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="4">4</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="5">5</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="6">6</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="1">1</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="2">2</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="3">3</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="normal-btn btn btn-block" value="0">0</button>
+                </div>
+                <div class="digit col-lg-4">
+                    <button class="point btn btn-block" value=".">.</button>
+                </div>
+                <div class="digit-equal col-lg-4">
+                    <button class="evaluate btn btn-block" value="=">=</button>
+                </div>
+            </div>
+
+            <!-- OPERATORS -->
+            <div class="operators col-lg-1">
+                <div class="op op-clear col-lg-12">
+                    <button class="clear btn btn-block" value="c">c</button>
+                </div>
+                <div class="op col-lg-12">
+                    <button class="normal-btn btn btn-block" style="" value="/">/</button>
+                </div>
+                <div class="op col-lg-12">
+                    <button class="normal-btn btn btn-block" style="" value="*">x</button>
+                </div>
+                <div class="op col-lg-12">
+                    <button class="normal-btn btn btn-block" style="" value="-">-</button>
+                </div>
+                <div class="op col-lg-12">
+                    <button class="normal-btn btn btn-block" style="" value="+">+</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</div>
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+<h2 class="display-coords">Coords: </h2>
+<button id="log-array" class="btn btn-primary">Show array</button>
+<div class="display-coords-array">All coords: </div>
+<button id="show-plot" class="btn btn-primary">Plot</button>
+
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/1.5.2/math.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML.js"></script>
+<script src="js/bootstrap-switch.js"></script>
+<script src="js/calculator.js"></script>
+<script src="js/analyse.js"></script>
+<script src="js/tasks.js"></script>
+
+</body>
+</html>
