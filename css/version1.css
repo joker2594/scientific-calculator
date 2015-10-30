@@ -133,6 +133,40 @@ body {
     margin-left: 210px;
 }
 
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.dot {
+    stroke: #000;
+}
+
+.tooltip {
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    padding: 3px;
+    pointer-events: none;
+    background-color: #e9eaed;
+    border: 1px solid #dfe0e4;
+}
+
+svg {
+    background-color: white;
+    margin: 20px 200px;
+}
+
+.plot-title {
+    margin-left: 200px;
+}
+
+#plot-expr {
+    margin-left: 200px;
+}
+
 
 
 
